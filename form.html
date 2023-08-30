@@ -7,9 +7,9 @@
 </head>
 <body class="page-body">
   <header class="main-header">
-    <a href="#" class="main-header__logo">
-    </a>
-    <a href="#" class="main-header__logo-text">
+    <a href="#" class="main-header__logo logo">
+      <img class="logo__image" src="./images/logo/logo-cat.svg" alt="Логотип Cat Energy" width="33px" height="38px">
+      <img class="logo__image-text" src="./images/logo/logo-text.svg" alt="Текстовый логотип Cat Energy" width="101px" height="18px">
     </a>
       <nav class="main-navigation">
         <button class="main-navigation__toggle" type="button" aria-label="Кнопка выподающего меню"></button>
@@ -26,7 +26,7 @@
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link site-list__link--activ" href="#">
+              <a class="site-list__link" href="#">
               Подбор программы
               </a>
             </li>
@@ -100,7 +100,7 @@
         <legend class="field-group__title lined-title">Комментарий</legend>
         <input class="field-group__input field-group__comment" type="text" name="comment" placeholder="Расскажите обо всех повадках кота">
       </fieldset>
-      <fieldset class="programms-selction__group-additionally checkbox-group">
+      <fieldset class="programms-selection__group-additionally checkbox-group">
         <legend class="checkbox-group__title lined-title">Дополнительно</legend>
         <ul class="checkbox-group__list">
           <li class="checkbox-group__item">
@@ -122,18 +122,19 @@
         </ul>
       </fieldset>
       <button class="programms-selection__button button" type="submit">Отправить заявку</button>
-      <span class="programm-selection__note"> * — Обязательные поля</span>
+      <span class="programms-selection__note"> * — Обязательные поля</span>
      </form>
   </section>
   <section class="contacts">
-    <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+    <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
     <address class="contacts__addres">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-    <img class="contacts__map-location" src="" alt="Карта местонахождения Cat Energy">
+    <img class="contacts__map-location" src="./images/content/location.jpg" alt="Карта местонахождения Cat Energy" width="320px" height="362px">
   </section>
   </main>
   <footer class="main-footer">
     <div class="main-footer__container">
-      <a href="#" class="main-footer__logo-text">
+      <a href="#" class="main-footer__logo-text logo">
+        <img class="logo-text" src="./images/logo/logo-cat.svg" alt="Логотип Cat Energy" width="128px" height="24px">
        </a>
       <ul class="main-footer__social-list">
         <li class="social-item">
@@ -145,7 +146,7 @@
           </a>
          </li>
          <li class="social-item">
-          <a href="#" class="social-link" aria-label="Ссылка на tg">
+          <a href="#" class="social-link" aria-label="Ссылка на telegram">
           </a>
          </li>
       </ul>
@@ -155,6 +156,7 @@
         HTML Academy
       </a>
       <a class="copyright__logo" href="#" aria-label="Ссылка на HTML Academy.">
+        <img src="./images/logo/Logo-html.svg" alt="Логотип HtmlAcademy" class="copyright__logo-icon" width="27px" height="34px">
       </a>
     </div>
   </footer>
