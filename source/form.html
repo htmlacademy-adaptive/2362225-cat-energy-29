@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cat Energy : Главная</title>
+  <title>Cat Energy: Подбор программы</title>
 </head>
 <body class="body">
   <header class="header">
@@ -42,69 +42,108 @@
   </header>
   <main class="main">
     <div class="main-wrapper container">
-    <section class="hero">
-       <h1>Функциональное питание для котов</h1>
-       <p class="hero-description">Занялся собой? Займись котом!</p>
-       <img class="hero-image" src="./img/content/index-can-mobile.png" alt="Функциональное питание Cat Energy с Курицей" width="280" height="270">
-       <a class="hero-button button button-primary" href="#">Подобрать программу</a>
-    </section>
-    <section class="programms">
-      <h2 class="programms__title">программы</h2>
-      <ul class="programms__list">
-       <li class="programms__item programms__item--slim">
-        <h3 class="programms-title">Похудение</h3>
-        <p class="programms__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-        <a class="programms__link" href="#">Каталог slim</a>
-      </li>
-      <li class="programms__item programms__item--pro">
-        <h3 class="programms__title">Набор массы</h3>
-        <p class="programms-deskription">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-        <a class="programms__link" href="#" >Каталог pro</a>
-      </li>
-      </ul>
-    </section>
-    <section class="description-product">
-       <h2 class="description-product__title">Как это работает</h2>
-      <ol class="description-product__list">
-       <li class="description-product__item">
-        Функциональное питание содержит только полезные питательные вещества.
-       </li>
-       <li class="description-product__item">
-        Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
-       </li>
-       <li class="description-product__item">
-        Замените один-два приема обычной еды на наше функциональное питание.
-       </li>
-       <li class="description-product__item">
-        Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
-       </li>
-      </ol>
-    </section>
-    <section class="example">
-      <h2 class="example__title">Живой пример</h2>
-      <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-       <ul class="example__list">
-        <li class="example__item">
-          <span class="example__item-value">5кг</span>
-          <p class="example__item-info">снижение веса</p>
-        </li>
-        <li class="example__item bordered-data">
-          <span class="example__item-value">60 дней</span>
-          <p class="example__item-info">затрачено времени</p>
-        </li>
-       </ul>
-       <p class="example__expenses">Затраты на питание: 15000 руб.</p>
-       <div class="example__slaider-container">
-        <img class="example__slider-befor" src="./img/content/cat-before.png" alt="Кот Борис до смены корма на Car Energy" width="280" height="256">
-        <button class="example__slider-toggle"  type="button" aria-label="кнопка переключения на до и после"></button>
-      </div>
-    </section>
-    <section class="contacts">
-      <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
-      <address class="contacts__addres">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-      <img class="contacts__map-location" src="./img/content/location.jpg" alt="Карта местонахождения Cat Energy" width="320" height="362">
-    </section>
-    </div>
+    <section class="programms-selection">
+     <h1 class="programms-selection__title title">Подбор программы</h1>
+     <p class="programms-selection__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+     <form class="programms-selection__questionnaire" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset class="programms-selection__group-cat-information field-group">
+        <legend class="field-group__title">Информация о питомце.</legend>
+        <ul class="field-group__list">
+          <li class="field-group__item field">
+            <label class="field__title" for="cat-name">
+              Имя:*
+            </label>
+            <input class="field__input field__input--cat-name" type="text" id="cat-name" name="cat-name" placeholder="Барсик" required>
+          </li>
+          <li class="field-group__item field">
+            <label class="field__title" for="cat-weight">
+              Вес (кг):*
+            </label>
+            <input class="field__input field__input--cat-weight" type="number" id="cat-weight" name="cat-weight" placeholder="7" required>
+          </li>
+          <li class="field-group__item field">
+            <label class="field__title" for="cat-age">
+              Возраст (лет):*
+            </label>
+            <input class="field__input field__input--cat-age" type="number" id="cat-age" name="cat-age" placeholder="7" required>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="programms-selection__group-goals radio-group">
+          <legend class="radio-group__title">Выбор программы.</legend>
+          <ul class="radio-group__list">
+            <li class="radio-group__item radio">
+              <input class="radio__input-control" type="radio" name="goal" value="slim">
+              <label class="radio__title">
+                Похудение
+              </label>
+            </li>
+            <li class="radio-group radio">
+              <input class="radio__input-control" type="radio" name="goal" value="pro">
+              <label class="radio__title">
+                Набор массы
+              </label>
+            </li>
+            <li class="radio-group radio">
+              <input class="radio__input-control" type="radio" name="goal" value="advice">
+              <label class="radio__title">
+                Не знаю (нужен ваш совет)
+              </label>
+            </li>
+          </ul>
+      </fieldset>
+      <fieldset class="programms-selection__contact-details__group field-group">
+        <legend class="field-group__title lined-title">Контактные данные (владельца кота)</legend>
+        <ul class="field-group__list">
+          <li class="field-group__item field">
+            <label class="field__title" for="email">
+              E-mail:*
+            </label>
+            <input class="field__input field__input--email" type="text" id="email" name="owner-email" placeholder="kuklachev@gmail.com" required>
+          </li>
+          <li class="field-group__item field">
+            <label class="field__title" for="owner-number">
+              Телефон:*
+            </label>
+            <input class="field__input field__input--numbert" type="number" id="owner-number" name="owner-numbert" placeholder="8 (960) 900-60-90" required>
+          </li>
+          </ul>
+      </fieldset>
+      <fieldset class="programms-selection__group-comment field-group">
+        <legend class="field-group__title lined-title">Комментарий</legend>
+        <input class="field-group__input field-group__comment" type="text" name="comment" placeholder="Расскажите обо всех повадках кота">
+      </fieldset>
+      <fieldset class="programms-selection__group-additionally checkbox-group">
+        <legend class="checkbox-group__title lined-title">Дополнительно</legend>
+        <ul class="checkbox-group__list">
+          <li class="checkbox-group__item">
+            <input class="checkbox-group__input checkbox-group__additional" type="checkbox" name="sweetener" checked>
+            <label class="checkbox-group__item-title">Сахарозаменитель</label>
+          </li>
+          <li class="checkbox-group__item">
+            <input class="checkbox-group__input checkbox-group__additional" type="checkbox" name="drinking water">
+            <label class="checkbox-group__item-title">Питьевая вода</label>
+          </li>
+          <li class="checkbox-group__item">
+            <input class="checkbox-group__input checkbox-group__additional" type="checkbox" name="milk">
+            <label class="checkbox-group__item-title">Молоко</label>
+          </li>
+          <li class="checkbox-group__item">
+            <input class="checkbox-group__input checkbox-group__additional" type="checkbox" name="vitamins">
+            <label class="checkbox-group__item-title">Витамины</label>
+          </li>
+        </ul>
+      </fieldset>
+      <button class="programms-selection__button button" type="submit">Отправить заявку</button>
+      <span class="programms-selection__note"> * — Обязательные поля</span>
+     </form>
+  </section>
+  <section class="contacts">
+    <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
+    <address class="contacts__addres">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+    <img class="contacts__map-location" src="./img/content/location.jpg" alt="Карта местонахождения Cat Energy" width="320" height="362">
+  </section>
+</div>
   </main>
   <footer class="footer">
     <div class="footer__wrapper container">
