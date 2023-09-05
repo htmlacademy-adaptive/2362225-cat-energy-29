@@ -50,10 +50,15 @@
   line-height: 20px;
 }
 
-.gift {
-  background-image: url(../../img/content/background-upsale.jpg);
+.gift__bg {
+  background-image: url(/source/img/content/background-upsale.jpg);
   background-repeat: no-repeat;
-  min-width: 280px;
-  min-height: 290px;
+  width: 280px;
+  height: 290px;
+}
+.gift__bg-image{
+  background: rgba(104, 183, 56, 0.85);
+  width: 280px;
+  height: 290px;
 }
 
