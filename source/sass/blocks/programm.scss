@@ -1,0 +1,150 @@
+.programm-selection__wrapper {
+  padding: 27px 20px 32px;
+}
+
+.programm-selection__group-cat-information {
+  @include fieldset-reset;
+  border-bottom: 1px solid #e7e7e7;
+  padding-bottom: 24px;
+  margin-bottom: 28px;
+}
+
+.field-group__list {
+  @include list-reset;
+}
+
+.programm-selection__title {
+  color: $color-primary;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+  margin-bottom: 27px;
+}
+
+.programm-selection__description {
+  color: $color-primary;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 39px;
+}
+
+.field__title {
+  color: $base-font-color;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-right: 13px;
+}
+
+.field__input--cat-age {
+  min-width: 173px;
+  min-height: 45px;
+}
+
+.programms-selection__group-goals {
+  @include fieldset-reset;
+  border-bottom: 1px solid #e7e7e7;
+  padding-bottom: 25px;
+  margin-bottom: 26px;
+}
+
+.radio-group__list {
+  @include list-reset;
+}
+
+.radio__title {
+  color: $base-font-color;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.radio__input-control {
+  margin: 0;
+  min-width: 30px;
+  min-height: 30px;
+}
+
+.programms-selection__contact-details__group {
+  @include fieldset-reset;
+  margin-bottom: 24px;
+}
+
+.field__input {
+  padding-top: 14px;
+  padding-bottom: 13px;
+  padding-left: 14px;
+  color: $base-font-color;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.field__input--cat-name {
+  margin-bottom: 14px;
+}
+
+.field__input--cat-weight {
+  margin-bottom: 14px;
+}
+
+.field__input--email {
+  margin-bottom: 14px;
+}
+
+.programms-selection__group-comment {
+  @include fieldset-reset;
+  margin-bottom: 23px;
+}
+
+.field-group__title {
+  color: $color-primary;
+  font-size: 24px;
+  line-height: 26px;
+  margin: 0;
+  margin-bottom: 38px;
+}
+
+.programms-selection__group-additionally {
+  @include fieldset-reset;
+  margin-bottom: 34px;
+}
+
+.checkbox-group__title {
+  color: $color-primary;
+  font-size: 24px;
+  line-height: 26px;
+  margin: 0;
+  margin-bottom: 34px;
+}
+
+.checkbox-group__list {
+  @include list-reset;
+}
+
+.checkbox-group__item {
+  margin-bottom: 13px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.checkbox-group__input {
+  min-width: 30px;
+  min-height: 30px;
+  margin: 0;
+}
+
+.checkbox-group__item-title {
+  color: $base-font-color;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.programms-selection__button {
+  margin-bottom: 21px;
+}
+
+.programms-selection__note {
+  color: $color-primary;
+  font-family: $font-secondary;
+  line-height: 16px;
+}

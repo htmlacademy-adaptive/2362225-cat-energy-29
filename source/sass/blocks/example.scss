@@ -1,0 +1,44 @@
+.example {
+  background-color: #eaeaea;
+  padding: 25px 20px 40px;
+}
+.example__title {
+  margin: 0;
+  margin-bottom: 40px;
+  color: $color-primary;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.example__description {
+  color: $base-font-color;
+  font-family: $font-secondary;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.example__list {
+  @include list-reset;
+}
+
+.example__expenses {
+  color: $color-primary;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.example__item-value {
+  color: $color-primary;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.example__item-info {
+  color: $base-font-color;
+  font-family: $font-secondary;
+  font-size: 12px;
+  line-height: 100%;
+}

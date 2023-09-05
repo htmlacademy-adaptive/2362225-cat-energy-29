@@ -1,0 +1,39 @@
+.programms__list {
+  @include list-reset;
+}
+
+.programms__item {
+  background-color: $color-seconadary;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.programms__title {
+  color: $color-primary;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+
+.programms__container-image {
+ max-width: 50px;
+ max-height: 50px;
+ background-color: $green-font-color;
+ border-radius: 100%;
+ margin-left: 20px;
+}
+
+.programms__description {
+  @include base-text;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 19px;
+}
+
+.programms__link {
+  color: $color-primary;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}

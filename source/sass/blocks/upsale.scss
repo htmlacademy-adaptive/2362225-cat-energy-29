@@ -1,0 +1,59 @@
+.upsale__wrapper {
+  padding: 25px 20px 35px;
+}
+
+.upsale__title {
+  color: $color-primary;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 36px;
+}
+
+.upsale__list {
+  @include list-reset;
+  padding: 0 20px 35px 20px;
+}
+.upsale__item {
+  border-top: 1px solid #cdcdcd;
+  padding-top: 13px;
+  padding-bottom: 19px;
+}
+.upsale__item:last-child {
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.card-upsale__list {
+  @include list-reset;
+}
+
+.card-upsale__title {
+  color: #222222;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.card-upsale__title:first-child {
+  margin-top: 0;
+}
+
+.upsale__item:last-child {
+  margin-bottom: 35px;
+}
+
+.gift__description {
+  color: $light-font-color;
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.gift {
+  background-image: url(../../img/content/background-upsale.jpg);
+  background-repeat: no-repeat;
+  min-width: 280px;
+  min-height: 290px;
+}
+

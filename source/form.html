@@ -4,73 +4,74 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cat Energy: Подбор программы</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
-<body class="body">
-  <header class="header">
+<body>
+  <header">
     <div class="header__wrapper container">
-    <a href="#" class="header__logo logo">
-      <img class="logo__image" src="./img/logo/logo-cat.svg" alt="Логотип Cat Energy" width="33" height="38">
-      <img class="logo__text" src="./img/logo/logo-text.svg" alt="Текстовый логотип Cat Energy" width="101" height="18">
+      <a href="#" class="header__logo logo">
+        <img class="logo__image" src="./img/logo/logo-cat.svg" alt="Логотип Cat Energy" width="33" height="38">
+        <img class="logo__text" src="./img/logo/logo-text.svg" alt="Текстовый логотип Cat Energy" width="101" height="18">
       </a>
-    <div class="header__burger-container">
-    <button class="header__burger-container__toggle" type="button" aria-label="Кнопка выподающего меню">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </div>
+      <div class="header__burger-container">
+        <button class="header__burger" type="button" aria-label="Кнопка выподающего меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
       <nav class="main-navigation">
-          <ul class="main-navigation__list navigation-list">
-            <li class="navigation-list__item navigation-list__item">
-              <a class="navigation-list__link" href="#">
-                 Главная
-               </a>
-            </li>
-            <li class="navigation-list__item">
-              <a class="navigation-list__link" href="#">
+        <ul class="main-navigation__list navigation-list">
+          <li class="navigation-list__item">
+            <a class="navigation-list__link" href="#">
+              Главная
+            </a>
+          </li>
+          <li class="navigation-list__item">
+            <a class="navigation-list__link" href="#">
               Каталог продукции
-              </a>
-            </li>
-            <li class="navigation-list__item">
-              <a class="navigation-list__link" href="#">
+            </a>
+          </li>
+          <li class="navigation-list__item">
+            <a class="navigation-list__link navigation-list__link--current" href="#">
               Подбор программы
-              </a>
-            </li>
+            </a>
+          </li>
           </ul>
       </nav>
     </div>
   </header>
   <main class="main">
-    <div class="main-wrapper container">
-    <section class="programms-selection">
-     <h1 class="programms-selection__title title">Подбор программы</h1>
-     <p class="programms-selection__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-     <form class="programms-selection__questionnaire" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="programms-selection__group-cat-information field-group">
-        <legend class="field-group__title">Информация о питомце.</legend>
-        <ul class="field-group__list">
-          <li class="field-group__item field">
-            <label class="field__title" for="cat-name">
-              Имя:*
-            </label>
-            <input class="field__input field__input--cat-name" type="text" id="cat-name" name="cat-name" placeholder="Барсик" required>
-          </li>
-          <li class="field-group__item field">
-            <label class="field__title" for="cat-weight">
-              Вес (кг):*
-            </label>
-            <input class="field__input field__input--cat-weight" type="number" id="cat-weight" name="cat-weight" placeholder="7" required>
-          </li>
-          <li class="field-group__item field">
-            <label class="field__title" for="cat-age">
-              Возраст (лет):*
-            </label>
-            <input class="field__input field__input--cat-age" type="number" id="cat-age" name="cat-age" placeholder="7" required>
-          </li>
-        </ul>
-      </fieldset>
+    <section class="programm-selection">
+      <div class="programm-selection__wrapper container">
+        <h1 class="programm-selection__title">Подбор программы</h1>
+        <p class="programm-selection__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <form class="programms-selection__questionnaire" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="programm-selection__group-cat-information field-group">
+            <legend class="field-group__title visually-hidden">Информация о питомце.</legend>
+            <ul class="field-group__list">
+              <li class="field-group__item field">
+              <label class="field__title" for="cat-name">
+                Имя:*
+              </label>
+              <input class="field__input field__input--cat-name" type="text" id="cat-name" name="cat-name" placeholder="Барсик" required>
+            </li>
+            <li class="field-group__item field">
+              <label class="field__title" for="cat-weight">
+                  Вес (кг):*
+              </label>
+              <input class="field__input field__input--cat-weight" type="number" id="cat-weight" name="cat-weight" placeholder="7" required>
+            </li>
+            <li class="field-group__item field">
+               <label class="field__title" for="cat-age">
+                 Возраст (лет):*
+               </label>
+               <input class="field__input field__input--cat-age" type="number" id="cat-age" name="cat-age" placeholder="7" required>
+             </li>
+           </ul>
+         </fieldset>
       <fieldset class="programms-selection__group-goals radio-group">
-          <legend class="radio-group__title">Выбор программы.</legend>
+          <legend class="radio-group__title visually-hidden">Выбор программы.</legend>
           <ul class="radio-group__list">
             <li class="radio-group__item radio">
               <input class="radio__input-control" type="radio" name="goal" value="slim">
@@ -137,18 +138,20 @@
       <button class="programms-selection__button button" type="submit">Отправить заявку</button>
       <span class="programms-selection__note"> * — Обязательные поля</span>
      </form>
+    </div>
   </section>
-  <section class="contacts">
-    <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
-    <address class="contacts__addres">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+  <section class="contacts contacts--bg">
+    <div class="contacts__wrapper container">
+      <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
+      <address class="contacts__addres">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+    </div>
     <img class="contacts__map-location" src="./img/content/location.jpg" alt="Карта местонахождения Cat Energy" width="320" height="362">
   </section>
-</div>
-  </main>
-  <footer class="footer">
+</main>
+  <footer>
     <div class="footer__wrapper container">
       <a href="#" class="footer__logo-text logo">
-        <img class="logo-text" src="./img/logo/logo-text.svg" alt="Логотип Cat Energy" width="128" height="24">
+        <img class="logo__text" src="./img/logo/logo-text.svg" alt="Логотип Cat Energy" width="128" height="24">
        </a>
       <ul class="footer__social-list">
         <li class="social-item">
@@ -173,14 +176,14 @@
           </a>
          </li>
       </ul>
-    </div>
-    <div class="footer__copyright copyright">
-      <a class="copyright__text" href="#">
-        HTML Academy
-      </a>
-      <a class="copyright__logo" href="#" aria-label="Ссылка на HTML Academy.">
-        <img src="./img/logo/Logo-html.svg" alt="Логотип HtmlAcademy" class="copyright__logo-icon" width="27" height="34">
-      </a>
+      <div class="footer__copyright copyright">
+        <a class="copyright__text" href="#">
+          HTML Academy
+        </a>
+        <a class="copyright__logo" href="#" aria-label="Ссылка на HTML Academy.">
+          <img src="./img/logo/Logo-html.svg" alt="Логотип HtmlAcademy" class="copyright__logo-icon" width="27" height="34">
+        </a>
+      </div>
     </div>
   </footer>
 </body>
