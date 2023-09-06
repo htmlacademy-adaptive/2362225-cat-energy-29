@@ -5,17 +5,18 @@
   padding: 27px 20px 0;
 }
 
-.hero__container{
-  background: rgba(104, 183, 56, 0.85);
-  width: 320px;
-  height: 302px;
-}
 .hero__bg {
-  background-image: url(../../img/content/background-hero.jpg);
+  background: url(../img/content/background-hero.jpg);
   background-repeat: no-repeat;
   width: 320px;
   height: 302px;
   margin-left: -20px;
+}
+
+.hero__container{
+  background: rgba(104, 183, 56, 0.85);
+  width: 320px;
+  height: 302px;
 }
 
 .main__title {
