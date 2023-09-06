@@ -9,7 +9,6 @@
   font-size: 36px;
   line-height: 40px;
 }
-
 .example__description {
   color: $base-font-color;
   font-family: $font-secondary;
@@ -18,24 +17,20 @@
   margin: 0;
   margin-bottom: 20px;
 }
-
 .example__list {
   @include list-reset;
 }
-
 .example__expenses {
   color: $color-primary;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
 }
-
 .example__item-value {
   color: $color-primary;
   font-size: 24px;
   line-height: 24px;
 }
-
 .example__item-info {
   color: $base-font-color;
   font-family: $font-secondary;

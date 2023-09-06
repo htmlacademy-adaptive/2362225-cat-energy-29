@@ -3,12 +3,10 @@
   font-size: 36px;
   line-height: 40px;
 }
-
 .description-product__item{
   @include base-text;
   margin-bottom: 20px;
 }
-
 .description-product__item:last-child{
   margin-bottom: 40px;
 }

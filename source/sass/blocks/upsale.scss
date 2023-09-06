@@ -1,7 +1,6 @@
 .upsale__wrapper {
   padding: 25px 20px 35px;
 }
-
 .upsale__title {
   color: $color-primary;
   font-size: 24px;
@@ -9,7 +8,6 @@
   margin: 0;
   margin-bottom: 36px;
 }
-
 .upsale__list {
   @include list-reset;
   padding: 0 20px 35px 20px;
@@ -22,11 +20,9 @@
 .upsale__item:last-child {
   border-bottom: 1px solid #cdcdcd;
 }
-
 .card-upsale__list {
   @include list-reset;
 }
-
 .card-upsale__title {
   color: #222222;
   font-size: 16px;
@@ -34,11 +30,9 @@
   text-transform: uppercase;
   margin: 0;
 }
-
 .card-upsale__title:first-child {
   margin-top: 0;
 }
-
 .upsale__item:last-child {
   margin-bottom: 35px;
 }

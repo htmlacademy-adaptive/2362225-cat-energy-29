@@ -6,33 +6,27 @@
   font-size: 36px;
   line-height: 36px;
 }
-
 .catalog__list {
   @include list-reset;
 }
-
 .catalog__item {
   border-top: 1px solid #ebebeb;
   padding: 20px 25px;
 }
-
 .card__title {
   color: #222222;
   line-height: 20px;
   text-transform: uppercase;
 }
-
 .card__list {
   @include list-reset;
 }
-
 .card__weight {
   color: $base-font-color;
   font-family: $font-secondary;
   font-size: 12px;
   line-height: 16px;
 }
-
 .card__flavor {
   color: $base-font-color;
   font-family: $font-secondary;
@@ -45,13 +39,11 @@
   font-size: 12px;
   line-height: 16px;
 }
-
 .card__lined-title {
   color: #111111;
   line-height: 20px;
   text-transform: uppercase;
 }
-
 .card__subtitle {
   color: $base-font-color;
   font-family: $font-secondary;

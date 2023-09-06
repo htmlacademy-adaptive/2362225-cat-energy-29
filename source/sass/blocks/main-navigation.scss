@@ -1,11 +1,9 @@
 .navigation-list {
   @include list-reset;
 }
-
 .navigation-list__item{
   border-top: 1px solid #E6E6E6;
 }
-
 .navigation-list__link{
   color: $color-primary;
   font-size: 20px;

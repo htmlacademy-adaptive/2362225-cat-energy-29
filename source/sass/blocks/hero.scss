@@ -4,7 +4,6 @@
 .hero__wrapper {
   padding: 27px 20px 0;
 }
-
 .hero__bg {
   background: url(../img/content/background-hero.jpg);
   background-repeat: no-repeat;
@@ -18,13 +17,11 @@
   width: 320px;
   height: 302px;
 }
-
 .main__title {
   @include main-title;
   margin: 0;
   margin-bottom: 25px;
 }
-
 .hero-description {
   margin: 0;
   color: $light-font-color;
@@ -33,7 +30,6 @@
   text-transform: uppercase;
   margin-bottom: 29px;
 }
-
 .hero__image{
   margin-top: -149px;
 }
