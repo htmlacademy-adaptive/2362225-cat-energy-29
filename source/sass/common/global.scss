@@ -18,6 +18,7 @@ body {
 img {
   height: auto;
   object-fit: contain;
+  display: block;
 }
 
 a {
@@ -27,6 +28,7 @@ a {
 .container {
   margin: 0 auto;
   padding: 0 20px;
+  width: 100%;
 }
 
 @media (min-width: $width-tablet) {

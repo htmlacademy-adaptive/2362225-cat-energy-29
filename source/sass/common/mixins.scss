@@ -11,7 +11,7 @@
 }
 
 @mixin base-text {
-  font-family: $primary-font;
+  font-family: $font-secondary;
   font-size: 14px;
   line-height: 18px;
   color: $base-font-color;
@@ -24,8 +24,7 @@
 
 @mixin main-title {
   margin: 0;
-  font-family: $secondary-font;
-  color: $dark-text-color;
+  font-family: $font-primary;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;

@@ -1,9 +1,10 @@
 .header {
-  min-width: 320px;
+  min-width: $width-mobile;
 }
 
 .header__wrapper {
-  padding-top: 12px;
+  padding-top: 13px;
+  padding-bottom: 13px
 }
 
 .header__head {
@@ -12,19 +13,17 @@
   align-items: center;
 }
 
+
 .header__menu-btn {
   width: 18px;
   height: 24px;
-}
-
-.header__navigation {
-  margin-top: 15px;
 }
 
 .navigation__list {
   @include list-reset;
   border-top: 1px solid #E6E6E6;
   display: none;
+  margin-top: 15px;
 }
 
 .navigation-list__link {
@@ -39,7 +38,7 @@
   padding: 23px;
 }
 
-@media(min-width: 768px) {
+@media(min-width: $width-tablet) {
   .header__logo-text {
     display: none;
   }
@@ -50,29 +49,33 @@
 
   .header__wrapper {
     padding-top: 25px;
+    padding-bottom: 25px;
     display: flex;
-    text-align: center;
+    align-items: flex-end;
     justify-content: space-between;
   }
 
-  .header__picture-image {
+  .header__picture-image{
     width: 174px;
     height: 50px;
+    margin-right: 94px;
   }
-  .header__navigation{
-    margin-top: 0;
-  }
-  .navigation__list {
-    display: flex;
-    border: none;
-    flex-wrap: wrap;
+
+  .header__navigation {
+    display: block;
     margin: 0;
-    max-width: 440px;
+  }
+
+  .navigation__list {
+    border-top: none;
+    max-width: 540px;
+    display: flex;
+
+    flex-wrap: wrap;
   }
 
   .navigation-list__item {
     margin-right: 33px;
-
     &:last-child {
       margin-right: 0;
     }
@@ -87,14 +90,15 @@
     line-height: 24px;
 
     &--current {
-      border-bottom: 2px solid #68B738;
+      border-color: #68B738;
     }
   }
 }
 
-@media(min-width: 1440px) {
+@media(min-width: $width-desktop) {
   .header__wrapper {
     padding-top: 55px;
+    padding-bottom: 55px;
     background-color: #68B738;
   }
 
@@ -103,11 +107,16 @@
     height: 59px;
   }
 
+  .navigation__list {
+    max-width: 480px;
+  }
+
   .navigation-list__link {
     color: $light-font-color;
     font-size: 20px;
     line-height: normal;
     padding-bottom: 8px;
+
     &--current {
       border-color: $light-font-color;
     }
