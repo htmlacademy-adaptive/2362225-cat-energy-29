@@ -1,25 +1,29 @@
-.description-product {
+.description-product__wrapper {
   margin-bottom: 49px;
 }
 
 .description-product__title {
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 40px;
+  @include block-title;
+  margin-bottom: 40px;
 }
 
 .description-product__list {
   @include list-reset;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
 }
 
 .description-product__item {
   @include base-text;
-  &::after{
+  position: relative;
+
+  &::before {
     content: "";
-    background-color: $green-font-color;
     width: 60px;
     height: 60px;
+    background-color: $green-font-color;
+    float: left;
+    margin-right: 20px;
   }
-  
 }

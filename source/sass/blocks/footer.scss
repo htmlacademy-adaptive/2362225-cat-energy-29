@@ -1,9 +1,12 @@
+.footer{
+  background: $color-secondary;
+}
+
 .footer__wrapper {
   padding-top: 40px;
   padding-bottom: 40px;
   display: flex;
   flex-direction: column;
-  background: $color-secondary;
 }
 
 .footer__logo-text {
@@ -25,7 +28,7 @@
 
 
 
-.social__item {
+.social-list__item {
   margin-right: 24px;
 
   &:last-child {

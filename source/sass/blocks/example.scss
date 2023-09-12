@@ -1,51 +1,62 @@
-.example__wrapper {
+.example {
   background-color: #EAEAEA;
+}
+
+.example__wrapper {
   padding-top: 25px;
   padding-bottom: 40px;
-}
-
-.example__title {
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 40px;
-  margin: 0;
-  margin-bottom: 40px;
-}
-
-.example__description {
-  color: $base-font-color;
-  font-family: $font-secondary;
-  margin: 0;
-  margin-bottom: 20px;
 }
 
 .example__list {
   @include list-reset;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .example__item {
-  border: 1px solid #CDCDCD;
+  border: 1px solid #cdcdcd;
   border-radius: 5%;
-  text-align: center;
-  max-width: 125px;
-  position: relative;
+  max-width: 124px;
+  margin-right: 32px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.example__title {
+  @include block-title;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.example__description {
+  @include base-text;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .example__item-value {
   font-size: 24px;
   line-height: 24px;
+  margin: 0 auto;
 }
 
 .example__item-info {
   color: $base-font-color;
-  font-family: $font-secondary;
+  text-align: center;
+  font-family: $color-secondary;
   font-size: 12px;
   line-height: 100%;
-  max-width: 80px;
   background-color: #EAEAEA;
+  max-width: 77px;
 }
 
-.example__item:nth-child(1) {
-  margin-right: 32px;
+.example__expenses {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
 }
