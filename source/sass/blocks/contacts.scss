@@ -33,6 +33,10 @@
 
 }
 
+.contacts--grey {
+  background-color: $color-secondary;
+}
+
 @media(min-width: 768px) {
   .contacts iframe {
     border: none;
@@ -53,11 +57,13 @@
     line-height: 20px;
   }
 }
-@media(min-width: 1440px){
-  .contacts{
+
+@media(min-width: 1440px) {
+  .contacts {
     position: relative;
     z-index: 0;
   }
+
   .contacts__wrapper {
     position: absolute;
     z-index: 1;

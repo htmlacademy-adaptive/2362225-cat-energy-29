@@ -31,13 +31,13 @@ a {
   max-width: $width-desktop;
 }
 
-@media (min-width: $width-tablet) {
+@media(min-width: $width-tablet) {
   .container {
     padding: 0 30px;
   }
 }
 
-@media (min-width: $width-desktop) {
+@media(min-width: $width-desktop) {
   .container {
     padding: 0 110px;
   }

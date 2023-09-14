@@ -11,10 +11,11 @@
   border: none;
 }
 
-@media (min-width: $width-tablet) {
-  .button {
-    padding: 14px 26px;
-    font-size: 20px;
-    line-height: 26px;
-  }
+.button--secondary {
+  background-color: $color-secondary;
+  color: $base-font-color;
+}
+
+.button--primary {
+  padding: 10px 0;
 }
