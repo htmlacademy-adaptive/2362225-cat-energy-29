@@ -46,3 +46,41 @@
     line-height: 60px;
   }
 }
+
+
+@mixin lined-title {
+  margin: 0;
+  font-family: $font-primary;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
+  position: relative;
+  left: -20px;
+  z-index: 2;
+  padding: 0 20px;
+
+  @media (min-width: $width-tablet) {
+    font-size: 36px;
+    line-height: 36px;
+    left: 0;
+    padding: 0 40px;
+  }
+
+  @media (min-width: $width-desktop) {
+    left: -40px;
+  }
+}
+
+@mixin block-line {
+  content: "";
+  background-color: $green-font-color;
+  width: 300vw;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 0;
+  z-index: 1;
+}

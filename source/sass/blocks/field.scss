@@ -1,0 +1,123 @@
+.field-group__list {
+  @include list-reset;
+}
+
+.field-group__item {
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.field__title {
+  color: $base-font-color;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-right: 13px;
+  min-width: max-content;
+}
+
+.field__input {
+  color: $base-font-color;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  height: 45px;
+  border: 1px solid #e7e7e7;
+  padding: 13px 15px;
+  width: 100%;
+  font-family: $font-primary;
+
+
+  &:focus {
+    border: 2px solid $base-font-color;
+    outline: none;
+  }
+
+  &::placeholder {
+    color: $base-font-color;
+    font-family: $font-primary;
+  }
+}
+
+.field__input--comment {
+  min-width: 280px;
+  min-height: 150px;
+  position: relative;
+  padding: 14px;
+
+  &::placeholder {
+    position: absolute;
+    padding: 14px;
+    top: 0;
+    left: 0;
+  }
+}
+
+.lined-title {
+  margin-bottom: 35px;
+}
+
+@media (min-width: $width-tablet) {
+  .field-group__item {
+    margin-bottom: 20px;
+  }
+
+  .field__title {
+    font-size: 20px;
+    line-height: normal;
+  }
+
+  .field__input {
+    height: 52px;
+    padding: 11px 16px 11px 20px;
+    font-size: 20px;
+    line-height: normal;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: normal;
+    }
+  }
+
+  .field__input--comment {
+    padding: 14px;
+
+    &::placeholder {
+      padding: 14px;
+    }
+  }
+
+  .field__input--comment {
+    height: 175px;
+
+    &::placeholder {
+      line-height: 30px;
+    }
+  }
+
+  .field-group__title-data {
+    margin-bottom: 76px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .field-group__list--data {
+    @include list-reset;
+    display: grid;
+    grid-template-columns: repeat(2, 570px);
+    gap: 80px;
+  }
+
+  .field__input--email {
+    margin-bottom: 0;
+  }
+
+  .field--data {
+    margin-bottom: 0;
+  }
+}

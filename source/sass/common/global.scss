@@ -1,3 +1,8 @@
+html {
+  height: 100%;
+  overflow-x: hidden;
+}
+
 *,
 *::after,
 *::before {
@@ -13,6 +18,7 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: $color-primary;
+  overflow-x: hidden;
 }
 
 img {
@@ -26,19 +32,23 @@ a {
 }
 
 .container {
-  margin: 0 auto;
   padding: 0 20px;
-  max-width: $width-desktop;
 }
 
 @media (min-width: $width-tablet) {
   .container {
     padding: 0 30px;
+
+    &--form {
+      padding: 0 70px;
+    }
   }
 }
 
 @media (min-width: $width-desktop) {
   .container {
     padding: 0 110px;
+    max-width: $width-desktop;
+    margin: 0 auto;
   }
 }

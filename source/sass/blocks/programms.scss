@@ -54,30 +54,31 @@
   margin-bottom: 15px;
 }
 
-.programms__link-wrapper {
-  position: relative;
-  min-width: 139px;
-}
-
 .programms__link {
   color: $color-primary;
   text-align: center;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  position: relative;
 
   &::after {
-    position: absolute;
     content: "";
-    border: 1px solid #000000;
+    background: url("../../img/icon/icon_arrow.svg");
+    position: absolute;
     margin-left: 15px;
-    min-width: 18px;
+    min-width: 32px;
+    height: 10px;
     top: 50%;
     transform: translateY(-50%);
   }
 }
 
 @media (min-width: $width-tablet) {
+  .programms{
+    margin-bottom: 45px;
+  }
+  
   .programms__item {
     padding: 77px 315px 53px 52px;
     position: relative;

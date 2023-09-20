@@ -1,0 +1,59 @@
+.programms-selection {
+  padding-bottom: 32px;
+  padding-top: 27px;
+  border-top: 1px solid #d9d9d9;
+}
+
+.programms-selection__title {
+  @include main-title;
+  margin-bottom: 39px;
+}
+
+.programms-selection__description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-bottom: 39px;
+  max-width: 230px;
+}
+
+@media (min-width: $width-tablet) {
+
+  .programms-selection {
+    border: none;
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  .programms-selection__wrapper {
+    margin-bottom: 66px;
+  }
+
+  .programms-selection__title {
+    margin-bottom: 54px;
+  }
+
+  .programms-selection__description {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 325px;
+    margin-bottom: 66px;
+  }
+
+}
+
+@media (min-width: $width-desktop) {
+
+  .programms-selection {
+    padding-top: 20px;
+    padding-bottom: 79px;
+  }
+
+  .programms-selection__form-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 570px);
+    gap: 80px;
+    margin-bottom: 70px;
+  }
+}

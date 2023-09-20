@@ -1,6 +1,6 @@
-.header {
-  min-width: $width-mobile;
-}
+// .header {
+//   min-width: $width-mobile;
+// }
 
 .header__wrapper {
   padding-top: 13px;
@@ -70,13 +70,11 @@
     border-top: none;
     max-width: 540px;
     display: flex;
-
     flex-wrap: wrap;
   }
 
   .navigation__list-item {
     margin-right: 33px;
-
     &:last-child {
       margin-right: 0;
     }
