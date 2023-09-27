@@ -1,0 +1,230 @@
+.upsale {
+  overflow-x: hidden;
+}
+
+.upsale__title {
+  @include lined-title;
+  max-width: max-content;
+  width: 95%;
+  margin-bottom: 36px;
+
+  @media (min-width: $width-tablet) {
+    width: 90%;
+  }
+}
+
+.upsale__wrapper-title {
+  position: relative;
+
+  &::after {
+    @include block-line;
+  }
+}
+
+.upsale__list {
+  @include list-reset;
+}
+
+.card-upsale {
+  border-top: 1px solid #cdcdcd;
+  padding-top: 13px;
+  padding-bottom: 19px;
+}
+
+.card-upsale__title {
+  color: #222222;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 13px;
+  min-width: max-content;
+}
+
+.card-upsale__list {
+  @include list-reset;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-upsale__item {
+  min-width: max-content;
+}
+
+.card-upsale__button {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.card-upsale__info,
+.card-upsale__value {
+  color: $base-font-color;
+  font-family: $font-secondary;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.gift {
+  background-image: url("../../img/catalog/Mobile/gift-bg-mobile.png");
+  height: 290px;
+  max-width: 280px;
+  background-repeat: no-repeat;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 59px;
+  padding-bottom: 43px;
+  margin-bottom: 35px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/catalog/Mobile/gift-bg-mobile@2x.png");
+    background-size: 280px auto;
+  }
+}
+
+.gift__icons {
+  width: 78px;
+  height: 80px;
+  margin-bottom: 48px;
+}
+
+.gift__description {
+  color: $light-font-color;
+  text-align: center;
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 20px;
+  width: 165px;
+  margin: 0;
+}
+
+@media (min-width: $width-tablet) {
+  .upsale__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 80px;
+  }
+
+  .upsale__list {
+    border: 1px solid #cdcdcd;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-upsale {
+    padding: 27px 38px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &:first-child {
+      border-top: 0;
+    }
+  }
+
+  .card-upsale__title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .card-upsale__info {
+    margin-right: 49px;
+  }
+
+  .gift {
+    background: url("../../img/catalog/Tablet-desktop/gift-bg-tablet.png");
+    height: 200px;
+    min-width: 707px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 125px 0 77px;
+    margin-bottom: 75px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/catalog/Tablet-desktop/gift-bg-tablet@2x.png");
+      background-size: 707px auto;
+    }
+  }
+
+  .gift__icons {
+    margin: 0;
+    width: 80px;
+    height: 83px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .upsale {
+    margin-bottom: 87px;
+  }
+
+  .upsale__wrapper {
+    display: flex;
+  }
+
+  .upsale__list {
+    border-left: none;
+    border-right: none;
+    margin: 0;
+    margin-right: 81px;
+  }
+
+  .card-upsale {
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 895px;
+  }
+
+  .card-upsale__title {
+    margin-bottom: 0;
+    width: 161px;
+    margin-right: 164px;
+  }
+
+  .card-upsale__wrapper {
+    display: flex;
+    padding: 10px 0;
+  }
+
+  .card-upsale__list {
+    width: 285px;
+    margin-right: 40px;
+  }
+
+  .card-upsale__info {
+    margin: 0;
+  }
+
+  .card-upsale__button {
+    margin: 0;
+  }
+
+  .gift {
+    background-image: url("../../img/catalog/Tablet-desktop/gift-bg-desktop.png");
+    height: 290px;
+    min-width: 245px;
+    flex-direction: column;
+    align-items: center;
+    padding: 56px 42px 43px 42px;
+    justify-content: stretch;
+    margin: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/catalog/Tablet-desktop/gift-bg-desktop@2x.png");
+      background-size: 245px auto;
+    }
+  }
+
+  .gift__icons {
+    margin-bottom: 46px;
+  }
+}

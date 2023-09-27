@@ -1,0 +1,139 @@
+.form-main__pet-information {
+  @include fieldset-reset;
+  position: relative;
+  padding-bottom: 24px;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+    height: 1px;
+    width: 300vw;
+    background-color: #d9d9d9;
+  }
+}
+
+.form-main__choice-programms {
+  @include fieldset-reset;
+  padding-top: 22px;
+  padding-bottom: 19px;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+    height: 1px;
+    width: 300vw;
+    background-color: #d9d9d9;
+  }
+}
+
+.form-main__data {
+  @include fieldset-reset;
+  margin-bottom: 24px;
+  margin-top: 26px;
+}
+
+
+.form-main__comment {
+  @include fieldset-reset;
+  margin-bottom: 23px;
+}
+
+.form-main__additionally {
+  @include fieldset-reset;
+  margin-bottom: 34px;
+}
+
+.form-main__sending {
+  @include fieldset-reset;
+}
+
+.form-main__sending-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-main__sending-button {
+  width: 100%;
+  margin-bottom: 21px;
+}
+
+@media (min-width: $width-tablet) {
+  .form-main__pet-information {
+    margin-bottom: 72px;
+    padding: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+
+
+  .form-main__choice-programms {
+    padding: 23px 27px 27px 27px;
+    margin-bottom: 65px;
+    border: 1px solid #e7e7e7;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .form-main__comment {
+    margin-bottom: 65px;
+  }
+
+  .form-main__data {
+    margin-bottom: 65px;
+  }
+
+  .form-main__additionally {
+    margin-bottom: 52px;
+  }
+
+  .form-main__sending-wrapper {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .form-main__sending-button {
+    margin: 0;
+    max-width: 284px;
+    margin-right: 60px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .form-main__pet-information {
+    margin-bottom: 0;
+  }
+
+  .form-main__choice-programms {
+    margin-bottom: 0;
+  }
+
+  .form-main__data {
+    margin-top: 0;
+  }
+
+  .form-main__additionally {
+    margin-bottom: 60px;
+  }
+
+  .checkbox-group__list {
+    grid-template-columns: repeat(4, 250px);
+    gap: 75px;
+  }
+
+  .form-main__sending-button {
+    min-width: 570px;
+    margin-right: 80px;
+  }
+}

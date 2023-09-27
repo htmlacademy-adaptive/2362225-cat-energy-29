@@ -1,0 +1,54 @@
+html {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: $width-mobile;
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-family: $font-primary;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-primary;
+  overflow-x: hidden;
+}
+
+img {
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+@media (min-width: $width-tablet) {
+  .container {
+    padding: 0 30px;
+
+    &--form {
+      padding: 0 70px;
+    }
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .container {
+    padding: 0 110px;
+    max-width: $width-desktop;
+    margin: 0 auto;
+  }
+}
