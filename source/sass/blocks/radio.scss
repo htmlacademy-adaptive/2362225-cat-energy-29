@@ -39,7 +39,7 @@
   }
 }
 
-.radio_real-input:checked+.radio__custom-input::before {
+.radio_real-input:checked + .radio__custom-input::before {
   display: block;
 }
 

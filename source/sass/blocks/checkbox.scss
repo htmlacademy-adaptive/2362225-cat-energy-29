@@ -23,7 +23,7 @@
   margin-right: 15px;
 }
 
-.checkbox__input:checked+.checkbox__custom-input {
+.checkbox__input:checked + .checkbox__custom-input {
   background-color: #ffffff;
   background-image: url("../../img/icon/tick.svg");
 }

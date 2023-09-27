@@ -15,7 +15,7 @@
   max-height: 303px;
   padding: 27px 0 170px 0;
 
-  @media (min-resolution: 2dppx){
+  @media (min-resolution: 2dppx) {
     background-image: url("../../img/content/hero-bg-mobile@2x.png");
     background-size: 320px auto;
   }
@@ -51,7 +51,7 @@
   margin-top: 3px;
 }
 
-.hero__picture-image{
+.hero__picture-image {
   margin: 0 auto;
 }
 
@@ -122,7 +122,7 @@
     min-height: 795px;
     position: relative;
 
-    @media (min-resolution: 2dppx){
+    @media (min-resolution: 2dppx) {
       background-image: url("../../img/content/hero-bg-desktop@2x.png");
       background-size: 720px auto;
     }

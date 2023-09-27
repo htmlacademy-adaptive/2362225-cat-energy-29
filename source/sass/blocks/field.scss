@@ -86,16 +86,10 @@
 
   .field__input--comment {
     padding: 14px;
-
-    &::placeholder {
-      padding: 14px;
-    }
-  }
-
-  .field__input--comment {
     height: 175px;
 
     &::placeholder {
+      padding: 14px;
       line-height: 30px;
     }
   }

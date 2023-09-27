@@ -94,12 +94,14 @@
 }
 
 @media (min-width: $width-desktop) {
-  .about-product__wrapper{
+  .about-product__wrapper {
     padding-bottom: 70px;
   }
-  .about-product__wrapper::after{
+
+  .about-product__wrapper::after {
     display: none;
   }
+
   .about-product__list {
     gap: 94px;
   }
